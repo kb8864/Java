@@ -1,6 +1,6 @@
 ＃ equalsメソッドの契約（間違えた問題)
 
-## 6bb1e978b610f31b00dd29b7bad258f540abf63f
+## [コード](https://github.com/kb8864/Java/commit/6bb1e978b610f31b00dd29b7bad258f540abf63f)
 
 ## 上のコードの答えは`false`。
 なぜ false になるのか、そしてなぜエラー（例外）にはならないのか
