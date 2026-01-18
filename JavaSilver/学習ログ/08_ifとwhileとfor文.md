@@ -43,6 +43,7 @@ System.out.println(i); // ここでコンパイルエラー！
 
 </details>
 
+----
 
 > [!WARNING]
 >「到達不能コード」のひっかけ
@@ -69,3 +70,35 @@ if (false) {
 ```
 
 </details>
+
+----
+
+> [!WARNING]
+> for文に宣言した変数は、ループの外側では参照できない！外で使いたい場合は、必ず for 文より前で宣言すること。
+> Javaのルールでは、for 文のカッコ ( ) 内で宣言された変数は、その for 文のブロック { } が終わった瞬間にメモリから消える
+> println は for 文の外側にあるため、コンパイラは「total って誰のこと？」と認識できず、エラーとなる
+
+> [!TIP]
+> 計算結果の表示 ループの過程（2, 3, 4...）をすべて見たい場合は、System.out.println を必ずループの { } の中に書くこと。外に書くと「最後の1回」しか表示されない。
+ <details><summary>下のコードで２３４５と表示されると思ったら違った</summary>
+
+```
+package sample;
+
+public class ControlStructures4 {
+  public static void main(String[] args) {
+    int a = 1;
+    for (int b = 2,total = 0; b <=5; b++){
+      total = a * b;
+    }
+    System.out.println(total);//ここでコンパイルエラー
+
+  }
+}
+
+----
+
+```
+
+</details>
+
