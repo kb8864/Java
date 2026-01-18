@@ -5,8 +5,9 @@ public class ControlStructures4 {
     int a = 1;
     for (int b = 2,total = 0; b <=5; b++){
       total = a * b;
+      System.out.println(total);
+
     }
-    System.out.println(total);//ここでコンパイルエラー
 
   }
 }
