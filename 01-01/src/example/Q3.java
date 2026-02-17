@@ -15,21 +15,21 @@ public class Q3 {
 
     boolean hasZero = false;
 
-    for (i = 0; i < n ; i++){
+    for (int i = 0; i < n; i++) {
       a[i] = sc.nextInt();
 
-      if(a[i] == 0){
-        boolean hasZero = true;
-        System.out.println("YES");
-      }else(a[i] != 0){
-        boolean hasZero = false;
-        System.out.println("NO");
+      if (a[i] == 0) {
+        hasZero = true;
+        break;
+
       }
 
-
+      if(hasZero){
+        System.out.println("NO");
+      }else{
+        System.out.println("YES");
+      }
     }
-
     sc.close();
-
   }
 }
